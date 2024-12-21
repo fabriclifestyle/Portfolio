@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Yläpalkki -->
+  <nav class="navbar">
+    <div class="logo">Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">Tietoa</a></li>
+      <li><a href="#projects">Projektit</a></li>
+      <li><a href="#contact">Yhteys</a></li>
+    </ul>
+  </nav>
+
+  <!-- Esittely -->
+  <header class="hero">
+    <h1>Tervetuloa Portfoliooni</h1>
+    <p>Ohjelmistokehittäjä | Web-kehitys | UI/UX-suunnittelu</p>
+    <button onclick="scrollToSection('contact')">Ota yhteyttä</button>
+  </header>
+
+  <!-- Tietoa minusta -->
+  <section id="about" class="section">
+    <h2>Tietoa minusta</h2>
+    <p>Olen intohimoinen ohjelmistokehittäjä, joka rakastaa luoda käyttäjäystävällisiä verkkosovelluksia.</p>
+  </section>
+
+  <!-- Projektit -->
+  <section id="projects" class="section">
+    <h2>Projektit</h2>
+    <div class="project-container">
+      <div class="project-card">
+        <h3>Projekti 1</h3>
+        <p>Kuvaus projektista 1.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projekti 2</h3>
+        <p>Kuvaus projektista 2.</p>
+      </div>
+      <div class="project-card">
+        <h3>Projekti 3</h3>
+        <p>Kuvaus projektista 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteystiedot -->
+  <section id="contact" class="section">
+    <h2>Yhteys</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Nimi" required />
+      <input type="email" id="email" placeholder="Sähköposti" required />
+      <textarea id="message" placeholder="Viesti" required></textarea>
+      <button type="submit">Lähetä</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
